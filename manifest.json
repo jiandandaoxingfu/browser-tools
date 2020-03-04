@@ -1,0 +1,48 @@
+{
+  "name": "工具箱",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "author": "JMx",
+  "homepage_url": "http://github.com/jiandandaoxingfu/browser-tools",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "64": "icon.png"
+  },
+
+  "description": "网页工具箱",
+  "permissions": [
+    "tabs",
+    "https://*/*",
+    "http://*/*"
+  ],
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "64": "icon.png"
+    }
+  },
+
+  "background": {
+    "president": false
+  },
+
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*", "https://www.baidu.com/*"],
+    "js": [
+        "content-script/js/tool-box.js",
+        "content-script/js/key-code.js",
+        "content-script/js/click.js"
+    ],
+    "css": [
+      "content-script/css/index.css"
+    ],
+    "run_at": "document_start"
+    }
+  ]
+}
