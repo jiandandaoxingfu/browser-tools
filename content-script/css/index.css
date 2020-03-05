@@ -1,32 +1,7 @@
-#tool-box-jmx {
+iframe {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 300px;
-	width: 500px;
-	margin-left: -250px;
-	margin-top: -150px;
-	text-align: center;
-	background: white;
-	opacity: 0.7;
-	border: 1px solid gray;
-	border-radius: 10px;
-	z-index: 100000;
-}
-#tool-box-jmx a {
-	font-size: 18px;
-	color: black;
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 6px;
-	margin: 5px;
-	text-decoration: none;
-}
-#tool-box-jmx a:hover {
-	border: 1px solid blue;
-	color: blue;
-}		
-#tool-box-jmx a:active {
-	border: 1px solid red;
-	color: red;
-}
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}	

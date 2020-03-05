@@ -35,9 +35,8 @@
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*", "https://www.baidu.com/*"],
     "js": [
-        "content-script/js/tool-box.js",
-        "content-script/js/key-code.js",
-        "content-script/js/click.js"
+        "content-script/js/message.js",
+        "content-script/js/tool-box.js"
     ],
     "css": [
       "content-script/css/index.css"
